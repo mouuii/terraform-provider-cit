@@ -43,7 +43,7 @@ func main() {
 		// provider address is used in these tutorials in conjunction with a
 		// specific Terraform CLI configuration for manual development testing
 		// of this provider.
-		Address: "registry.terraform.io/cit/cit",
+		Address: "hashicorp.com/edu/hashicups",
 		Debug:   debug,
 	}
 

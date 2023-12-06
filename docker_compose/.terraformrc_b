@@ -1,7 +1,7 @@
 provider_installation {
 
   dev_overrides {
-      "registry.terraform.io/cit/cit" = "/Users/z/go/bin"
+      "hashicorp.com/edu/hashicups" = "/Users/z/go/bin"
   }
 
   # For all other providers, install them directly from their origin provider
