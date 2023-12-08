@@ -1,11 +1,19 @@
 terraform {
   required_providers {
     hashicups = {
-      source = "registry.terraform.io/cit/cit"
+      source = "hashicorp.com/edu/hashicups"
     }
   }
 }
 
-provider "hashicups" {}
+provider "hashicups" {
+  host     = "http://localhost:19090"
+  username = "education"
+  password = "test123"
+}
 
-data "hashicups_coffees" "example" {}
+data "hashicups_coffees" "edu" {}
+
+output "edu_coffees" {
+  value = data.hashicups_coffees.edu
+}
